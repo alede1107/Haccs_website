@@ -97,7 +97,26 @@ const Contact: React.FC = () => {
                 <Text color="whiteAlpha.800">New Jersey Institute of Technology, Newark, NJ</Text>
               </HStack>
             </VStack>
-
+            {/* Upload Resume CTA */}
+            <ChakraLink href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" _hover={{ textDecoration: "none" }}>
+              <Box
+                bg="haccs.coral"
+                color="white"
+                px={6}
+                py={4}
+                borderRadius="lg"
+                fontFamily="heading"
+                fontWeight={600}
+                fontSize="lg"
+                textAlign="center"
+                _hover={{ bg: "haccs.coralLight", transform: "translateY(-2px)" }}
+                transition="all 0.3s"
+                mt={4}
+              >
+                📄 UPLOAD YOUR RESUME
+              </Box>
+            </ChakraLink>
+          
             {/* Social Links */}
             <HStack gap={4} mt={4}>
               <ChakraLink href="https://discord.gg/Se5wAXzKDE" target="_blank">
